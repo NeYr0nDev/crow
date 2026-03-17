@@ -53,3 +53,50 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Появление маскота
+document.addEventListener('DOMContentLoaded', () => {
+  const mascotHelper = document.querySelector('.mascot-helper');
+  const closeBtn = document.querySelector('.mascot-close');
+  
+  let inactivityTimer;
+  const INACTIVITY_TIME = 5000; // 5 секунд бездействия для теста (потом можно поставить 10-15)
+
+  // Функция показа маскота
+  const showMascot = () => {
+    mascotHelper.classList.add('active');
+  };
+
+  // Функция скрытия маскота
+  const hideMascot = () => {
+    mascotHelper.classList.remove('active');
+  };
+
+  // Функция сброса таймера
+  const resetTimer = () => {
+    clearTimeout(inactivityTimer);
+    // Если маскот уже показан, мы его не прячем при активности, 
+    // пусть висит, пока юзер сам его не закроет. 
+    // Запускаем таймер заново только если маскот скрыт.
+    if (!mascotHelper.classList.contains('active')) {
+      inactivityTimer = setTimeout(showMascot, INACTIVITY_TIME);
+    }
+  };
+
+  // Отслеживаем активность пользователя
+  window.addEventListener('mousemove', resetTimer);
+  window.addEventListener('scroll', resetTimer);
+  window.addEventListener('keydown', resetTimer);
+  window.addEventListener('click', resetTimer);
+
+  // Закрытие по крестику
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault(); 
+      hideMascot();
+    });
+  }
+
+  // Запускаем таймер при старте
+  resetTimer();
+});
