@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  font-size: 0.833vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  width: 120rem;
+  height: 755.5625rem;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Montserrat", "Russo One", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  scroll-behavior: smooth;
+  padding-bottom: 2.3125rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 20.5rem;
+  height: 2.4375rem;
+}
+
+.btn-arrow {
+  width: 5.3125rem;
+  height: 3.5625rem;
+}
+
+.bg-lines {
+  width: 161.5rem;
+  height: 270.3125rem;
+  position: absolute;
+  top: 10.375rem;
+  left: -36.25rem;
+  z-index: -100;
+}
+
+header {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 24.1875rem;
+  padding: 0.75rem 0.875rem 0.75rem 0;
+  align-self: center;
+  margin-top: 2.3125rem;
+  align-items: center;
+}
+header .right-blok {
+  width: 65.6875rem;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-radius: 2.5rem;
+  background: #fff;
+  padding: 0.75rem 1.1875rem 0.75rem 2rem;
+}
+header .right-blok nav {
+  display: flex;
+  gap: 3.3125rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+}
+header .right-blok nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2.0625rem;
+  color: #c9c8c8;
+  transition: 150ms ease-in;
+}
+header .right-blok nav a:hover {
+  color: #0019ff;
+}
+header .right-blok nav a:active {
+  transition: 100ms;
+  transform: scale(0.99);
+  color: #1e1e1e;
+}
+header .right-blok button {
+  display: flex;
+  align-items: center;
+  gap: 2.8125rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 2.1875rem;
+  padding: 0.3125rem 0.375rem 0.3125rem 3.5625rem;
+  font-size: 2.5rem;
+  color: #fff;
+  transition: 150ms ease-in;
+}
+header .right-blok button:hover {
+  background-color: #000;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+header .right-blok button:active {
+  transform: scale(1);
+}
+
+.tspk {
+  font-family: "Russo One";
+  font-size: 37.5rem;
+  color: rgba(0, 25, 255, 0.3215686275);
+  z-index: 1;
+  position: absolute;
+  top: 12.875rem;
+  left: 9.8125rem;
+}
+
+.crow-img {
+  width: 50.9375rem;
+  height: 57.1875rem;
+  position: absolute;
+  top: 10.375rem;
+  left: 36rem;
+  z-index: 2;
+}
+
+.scroller {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  position: absolute;
+  top: 65.125rem;
+  z-index: 3;
+}
+
+.scroller__inner {
+  display: flex;
+  white-space: nowrap;
+  animation-name: scroll-left;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.scroller__inner span {
+  display: block;
+  font-family: "Russo One", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #0019ff;
+}
+
+.scroller__inner b {
+  font-weight: 400;
+  color: #272727;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.stikerpack {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 4.625rem;
+  position: absolute;
+  top: 76.1875rem;
+  left: 4.125rem;
+}
+.stikerpack .stikers {
+  display: flex;
+  flex-direction: column;
+  gap: 3.875rem;
+}
+.stikerpack p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 15.625rem;
+  font-family: "Russo One";
+  color: #e0e0e0;
+}
+
+.bg-waves {
+  width: 120rem;
+  height: 119.875rem;
+  position: absolute;
+  top: 169.5625rem;
+}
+
+.scene-creator {
+  width: 23.8125rem;
+  height: 11.1875rem;
+  position: absolute;
+  top: 173.125rem;
+  left: 48.0625rem;
+}
+
+.top-view {
+  width: 22.125rem;
+  height: 18.75rem;
+  position: absolute;
+  top: 190.5rem;
+  left: 2.4375rem;
+}
+
+.front-view {
+  width: 3.4375rem;
+  height: 18.75rem;
+  position: absolute;
+  top: 203.125rem;
+  left: 103.0625rem;
+}
+
+.isometria-view {
+  width: 18.75rem;
+  height: 22.125rem;
+  position: absolute;
+  top: 221.625rem;
+  left: 2.375rem;
+}
+
+.preview {
+  width: 58.5rem;
+  height: 47.875rem;
+  position: absolute;
+  top: 191.3125rem;
+  left: 31.25rem;
+}
+
+.design-system {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5625rem;
+  position: absolute;
+  top: 251.9375rem;
+  left: 7.3125rem;
+}
+.design-system .ds-top {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 9.375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.design-system .ds-top h2 {
+  height: 4.875rem;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.design-system .ds-top p {
+  height: 3.25rem;
+  font-weight: 400;
+  font-size: 2.6375rem;
+  color: rgba(0, 0, 0, 0.5764705882);
+}
+.design-system .ds-bottom {
+  width: inherit;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 3.8125rem;
+}
+.design-system .ds-bottom h1 {
+  font-family: "Russo One";
+  font-weight: 400;
+  font-size: 5rem;
+  height: 6rem;
+}
+.design-system .ds-bottom .text-styles {
+  width: inherit;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 4.6875rem;
+  align-items: center;
+}
+.design-system .ds-bottom .text-styles .Aa {
+  width: 32.9375rem;
+  height: 24.375rem;
+  padding-top: 1.5625rem;
+  border: 0.1694rem solid #a6a6a6;
+  border-radius: 3.375rem;
+  overflow: hidden;
+}
+.design-system .ds-bottom .text-styles .Aa span {
+  font-family: "Russo One";
+  font-weight: 400;
+  font-size: 21.1563rem;
+}
+.design-system .ds-bottom .text-styles .text-weight {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6875rem;
+}
+.design-system .ds-bottom .text-styles .text-weight p {
+  font-size: 3.125rem;
+}
+.design-system .ds-bottom .text-styles .text-weight p:nth-child(1) {
+  font-weight: 400;
+}
+.design-system .ds-bottom .text-styles .text-weight p:nth-child(2) {
+  font-weight: 500;
+}
+.design-system .ds-bottom .text-styles .text-weight p:nth-child(3) {
+  font-weight: 700;
+}
+.design-system .ds-bottom .text-styles .colors {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 2.8125rem;
+}
+.design-system .ds-bottom .text-styles .colors .color-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.design-system .ds-bottom .text-styles .colors .color-block .color-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.design-system .ds-bottom .text-styles .colors .color-block .color-text p {
+  font-weight: 400;
+  text-align: center;
+}
+.design-system .ds-bottom .text-styles .colors .color-block .color-text .color-name {
+  font-size: 3.125rem;
+}
+.design-system .ds-bottom .text-styles .colors .color-block .color-text .hex {
+  font-size: 2.5rem;
+}
+.design-system .ds-bottom .text-styles .colors .color-block .color-preview {
+  width: 9.375rem;
+  height: 9.375rem;
+}
+.design-system .ds-bottom .text-styles .colors .color-block .black {
+  background-color: #000;
+}
+.design-system .ds-bottom .text-styles .colors .color-block .gray {
+  background-color: #e0e0e0;
+}
+.design-system .ds-bottom .text-styles .colors .color-block .blue {
+  background-color: #0019ff;
+}
+
+.final-works {
+  width: 110.75rem;
+  height: 7.25rem;
+  position: absolute;
+  top: 310.9375rem;
+  left: 4.5rem;
+  font-family: "Russo One";
+  font-weight: 400;
+  font-size: 6rem;
+  text-align: center;
+  color: #3f3f3f;
+}
+
+.mockup {
+  font-family: "Russo One";
+  font-weight: 400;
+  font-size: 20rem;
+  color: #e0e0e0;
+  position: absolute;
+  top: 457.1875rem;
+  left: 22.9375rem;
+}
+
+.laptop1 {
+  position: absolute;
+  top: 459.25rem;
+}
+
+.laptop2 {
+  position: absolute;
+  top: 582.25rem;
+}
+
+.faq-container {
+  max-width: 104.9375rem;
+  color: #1a1a1a;
+  position: absolute;
+  top: 685.8125rem;
+  left: 7.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+.faq-container .faq-title {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: "Russo One";
+  text-transform: uppercase;
+  color: #272727;
+}
+.faq-container .faq-item {
+  border-bottom: 0.0625rem solid #a0a0a0;
+}
+.faq-container .faq-item.active .faq-question {
+  padding-bottom: 1.25rem;
+}
+.faq-container .faq-item.active .faq-answer {
+  opacity: 1;
+  padding-bottom: 2.5rem;
+}
+.faq-container .faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 2.5rem 3.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  text-align: left;
+  outline: none;
+  transition: padding-bottom 0.3s ease;
+}
+.faq-container .faq-question .faq-text {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.faq-container .faq-question .faq-icon {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1;
+  width: 1.875rem;
+  text-align: center;
+}
+.faq-container .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+  padding: 0 5rem 0 3.125rem;
+}
+.faq-container .faq-answer p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+footer {
+  width: 114.1875rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 741.25rem;
+  left: 3.25rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125rem 3rem 1.125rem 1.25rem;
+  border: 0.1875rem solid #E4E4E4;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  border-radius: 2rem;
+}
+footer .footer-h1 {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+footer .info {
+  width: 29.125rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+footer .info p {
+  width: 100%;
+  height: 3.5rem;
+  border-bottom: 0.0625rem solid #E4E4E4;
+  font-size: 1rem;
+  color: #797979;
+}
+footer .info h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer .contacts {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8125rem;
+}
+footer .contacts .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+footer .contacts .links .link {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 0.8125rem;
+  align-items: center;
+}
+footer .contacts .links .link a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #797979;
+  transition: 150ms ease-in;
+}
+footer .contacts .links .link a:hover {
+  color: #000;
+}
+footer .contacts .links .link a svg path:hover {
+  transition: 150ms ease-in;
+  stroke: #000;
+}
+footer .contacts .links .link .TG {
+  width: 1rem;
+  height: 0.875rem;
+}
+footer .contacts .links .link .VK {
+  width: 1rem;
+  height: 0.6875rem;
+}
+footer .contacts .links .link .RT {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+footer .contacts .links .link:nth-child(3) {
+  gap: 0.375rem;
+}/*# sourceMappingURL=style.css.map */
